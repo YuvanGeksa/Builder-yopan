@@ -1,0 +1,17 @@
+{
+  "name": "yopandelreyz-builder",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n WEB,API -c auto \"npm:dev:web\" \"npm:dev:api\"",
+    "dev:web": "npm --workspace apps/web run dev",
+    "dev:api": "npm --workspace apps/api run dev",
+    "lint": "npm --workspace apps/web run lint || true"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
