@@ -1,0 +1,17 @@
+{
+  "name": "@yopandelreyz/api",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "@yopandelreyz/shared": "file:../../packages/shared",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.4",
+    "node-fetch": "^3.3.2",
+    "nanoid": "^5.0.7"
+  }
+}
